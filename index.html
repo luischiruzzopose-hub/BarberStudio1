@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Barber Studio | Reservas Online</title>
+  <meta name="description" content="Reservá tu turno online en Barber Studio. Cortes, barba y estilo profesional." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="navbar">
+    <a href="#inicio" class="brand">
+      <img src="assets/logo.jfif" alt="Logo Barber Studio" />
+      <span>Barber Studio</span>
+    </a>
+    <nav>
+      <a href="#servicios">Servicios</a>
+      <a href="#galeria">Galería</a>
+      <a href="#reservas">Reservas</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <a class="nav-btn" href="#reservas">Reservar</a>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-content reveal">
+        <p class="eyebrow">Reservas online</p>
+        <h1>Tu próximo corte empieza con un turno.</h1>
+        <p class="hero-text">Elegí día y hora desde la web. Cortes modernos, barba, perfilado y atención profesional.</p>
+        <div class="hero-actions">
+          <a class="primary-btn" href="#reservas">Reservar turno</a>
+          <a class="secondary-btn" href="#servicios">Ver servicios</a>
+        </div>
+        <div class="stats">
+          <div><strong>+500</strong><span>clientes</span></div>
+          <div><strong>10-20h</strong><span>horario</span></div>
+          <div><strong>4.9★</strong><span>reseñas</span></div>
+        </div>
+      </div>
+      <div class="hero-image reveal">
+        <img src="assets/barberia-1.jfif" alt="Barbero trabajando en corte" />
+      </div>
+    </section>
+
+    <section id="servicios" class="section reveal">
+      <div class="section-title">
+        <p class="eyebrow">Servicios</p>
+        <h2>Elegí tu estilo</h2>
+      </div>
+      <div class="cards">
+        <article class="card"><span>✂️</span><h3>Corte clásico</h3><p>Corte prolijo, terminaciones limpias y asesoramiento de estilo.</p><strong>$450</strong></article>
+        <article class="card"><span>🔥</span><h3>Corte moderno</h3><p>Fade, degradé, textura y diseño adaptado a tu rostro.</p><strong>$550</strong></article>
+        <article class="card"><span>🧔</span><h3>Barba</h3><p>Perfilado, navaja, recorte y productos profesionales.</p><strong>$350</strong></article>
+        <article class="card"><span>⭐</span><h3>Corte + barba</h3><p>Servicio completo para salir renovado en una sola visita.</p><strong>$750</strong></article>
+      </div>
+    </section>
+
+    <section id="galeria" class="gallery-section reveal">
+      <div class="section-title">
+        <p class="eyebrow">Ambiente</p>
+        <h2>Una experiencia premium</h2>
+      </div>
+      <div class="gallery">
+        <img src="assets/barberia-1.jfif" alt="Atención en barbería" />
+        <img src="assets/barberia-2.jfif" alt="Silla de barbería" />
+        <img src="assets/barberia-3.jfif" alt="Interior de barbería" />
+      </div>
+    </section>
+
+    <section id="reservas" class="booking-section reveal">
+      <div class="booking-info">
+        <p class="eyebrow">Reservá online</p>
+        <h2>Elegí día y hora</h2>
+        <p>El calendario está integrado directamente en la web. Seleccioná el turno disponible y completá tus datos.</p>
+        <ul>
+          <li>Turnos de 1 hora</li>
+          <li>Lunes a sábado, 10:00 a 20:00</li>
+          <li>Confirmación automática</li>
+        </ul>
+      </div>
+      <div class="booking-card">
+        <div class="tidycal-embed" data-path="luischiruzzopose/reserva"></div>
+        <noscript>
+          <p>Activá JavaScript para ver el calendario o reservá desde <a href="https://tidycal.com/luischiruzzopose/reserva">este enlace</a>.</p>
+        </noscript>
+      </div>
+    </section>
+
+    <section class="reviews reveal">
+      <div class="review"><p>“Excelente atención y muy buen corte. Reservé desde la web y fue rapidísimo.”</p><strong>Martín G.</strong></div>
+      <div class="review"><p>“Lugar prolijo, buen ambiente y horario puntual.”</p><strong>Santiago R.</strong></div>
+      <div class="review"><p>“Muy recomendable. El sistema de reservas es simple y cómodo.”</p><strong>Nicolás P.</strong></div>
+    </section>
+  </main>
+
+  <footer id="contacto">
+    <div>
+      <h3>Barber Studio</h3>
+      <p>Montevideo, Uruguay · Lunes a sábado de 10:00 a 20:00</p>
+    </div>
+    <a class="whatsapp" href="https://wa.me/59899366787?text=Hola,%20quiero%20consultar%20por%20un%20turno%20en%20Barber%20Studio" target="_blank" rel="noopener">WhatsApp</a>
+  </footer>
+
+  <a class="floating-whatsapp" href="https://wa.me/59899366787?text=Hola,%20quiero%20reservar%20un%20turno" target="_blank" rel="noopener">💬</a>
+  <script src="script.js"></script>
+  <script src="https://asset-tidycal.b-cdn.net/js/embed.js" async></script>
+</body>
+</html>
